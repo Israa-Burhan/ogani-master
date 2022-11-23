@@ -22,3 +22,196 @@ a {
 ul {
   list-style: none;
 }
+
+.top-header {
+  background-color: #f8f9fa;
+}
+.top-header .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 16px;
+}
+.top-header .box .left1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.top-header .box .left1 .parg {
+  border-right: 2px solid #ddd;
+  padding-right: 20px;
+}
+.top-header .box .right1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.top-header .box .right1 .links a {
+  padding: 0 10px;
+}
+.top-header .box .right1 .languge {
+  border-right: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+}
+.top-header .box .right1 .languge .dropdown-toggle::after {
+  vertical-align: 0.2em !important;
+}
+.top-header .box .right1 .languge button {
+  border: none;
+  margin: 0 10px;
+}
+
+.middle-header .nav-item {
+  padding: 0 25px;
+}
+.middle-header .nav-item .nav-link {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #1c1c1c;
+}
+.middle-header .nav-item .nav-link:hover {
+  color: #7fad39;
+}
+.middle-header .nav-item .active {
+  color: #7fad39;
+}
+.middle-header .link li {
+  padding: 0 10px;
+}
+.middle-header .link li .a1 {
+  position: relative;
+}
+.middle-header .link li .a1::after {
+  content: "1";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #7fad39;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 1px 4px;
+  top: -2px;
+}
+.middle-header .link li .a2 {
+  position: relative;
+}
+.middle-header .link li .a2::after {
+  content: "3";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #7fad39;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 1px 4px;
+  top: -2px;
+}
+.middle-header .link svg {
+  font-size: 18px;
+  color: #1c1c1c;
+}
+.middle-header .link .span2 {
+  color: #1c1c1c;
+  font-weight: 700;
+}
+
+.bottom-header .btn {
+  width: 85%;
+  background-color: #7fad39;
+  color: #ffffff;
+  --bs-btn-border-radius: none !important;
+  font-size: 18px !important;
+  font-weight: 700;
+  --bs-btn-padding-x: 2rem !important;
+  --bs-btn-padding-y: 0.8rem !important;
+  text-align: left !important;
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .bottom-header .btn {
+    --bs-btn-padding-x: 20px !important;
+    font-size: 17px !important;
+  }
+}
+.bottom-header .btn:first-child:hover {
+  background-color: #7fad39;
+  color: #ffffff;
+}
+.bottom-header .btn svg {
+  margin-right: 10px;
+}
+.bottom-header .dropdown-toggle::after {
+  margin-left: 1.255em;
+  vertical-align: 0.2em;
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .bottom-header .dropdown-toggle::after {
+    margin-left: 0.255em;
+  }
+}
+.bottom-header .dropdown-menu {
+  inset: -3px auto auto 0px !important;
+  --bs-dropdown-min-width: calc(100% - 15%) !important;
+  --bs-dropdown-link-hover-bg: none !important;
+  --bs-dropdown-border-radius: none !important;
+  --bs-dropdown-font-size: 16px !important;
+  --bs-dropdown-item-padding-x: 2rem !important;
+  --bs-dropdown-item-padding-y: 0.5rem;
+}
+.bottom-header .search {
+  border: 1px solid #ebebeb;
+}
+.bottom-header .search .catogray {
+  padding-left: 13px;
+  color: #1c1c1c;
+  font-weight: 700;
+}
+.bottom-header .search .catogray svg {
+  margin-left: 5px;
+}
+.bottom-header .search input[type=search] {
+  margin: 13px;
+  border: none;
+  border-left: 2px solid #ebebeb;
+  margin-left: 35px;
+}
+.bottom-header .search span {
+  background: #7fad39;
+  padding: 12px 22px;
+  font-weight: 700;
+  font-size: 19px;
+  color: #ffffff;
+}
+.bottom-header .icon svg {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 50%;
+  color: #7fad39;
+  margin-right: 12px;
+  font-size: 16px;
+}
+.bottom-header .icon p {
+  margin-bottom: 0 !important;
+  color: #1c1c1c;
+  font-size: 18px;
+  font-weight: 700;
+}
