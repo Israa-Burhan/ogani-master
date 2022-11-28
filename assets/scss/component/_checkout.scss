@@ -1,1 +1,130 @@
 @use "./variables" as *;
+// start checkout
+// start top check
+
+.top-check {
+  margin: 70px 0;
+  .tittle {
+    color: #999999;
+    background-color: #f5f5f5;
+    border-top: 1px solid $main-color;
+    padding: 7px;
+    font-size: 16px;
+    svg {
+      color: $main-color;
+      margin-right: 3px;
+    }
+    span {
+      cursor: pointer;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+// end top check
+// strat billing
+
+.billing {
+  h4 {
+    color: $third-color;
+    font-weight: 700;
+  }
+  span {
+    color: red;
+  }
+  input {
+    height: 46px;
+    border: 1px solid #ebebeb;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #b2b2b2;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    &:focus-visible {
+      outline: none !important;
+    }
+  }
+  .input-check4 {
+    .p {
+      color: #b2b2b2;
+    }
+    .form-check {
+      input {
+        height: 16px !important;
+        padding-left: 0px !important;
+        margin-right: 15px;
+        background-color: $four-color;
+        border-color: #999999;
+        &:focus {
+          box-shadow: 0 0 0 0 $main-color !important;
+          background-color: $main-color !important;
+          border: $main-color !important;
+        }
+      }
+    }
+  }
+
+  .order {
+    background: #f5f5f5;
+    padding: 35px;
+    padding-top: 30px;
+    h4 {
+      color: $third-color;
+      font-weight: 700;
+    }
+    p {
+     font-size: 16px;
+     color: #6f6f6f;
+     font-weight: 400;
+     line-height: 26px;
+    }
+    ul{
+     li{
+      margin-bottom: 10px;
+      span{
+       float: right;
+      }
+      .price{
+       font-size: 16px;
+       color: #6f6f6f;
+       font-weight: 700;
+      }
+     }
+     .bold{
+      color: $third-color;
+      font-weight: 700;
+      font-size: 18px;
+     }
+    }
+    .form-check {
+      input {
+        height: 16px !important;
+        padding-left: 0px !important;
+        margin-right: 15px;
+        background-color: #f5f5f5;
+        border-color: #999999;
+        &:focus {
+          box-shadow: 0 0 0 0 $main-color !important;
+          background-color: $main-color !important;
+          border: $main-color !important;
+        }
+      }
+    }
+    button{
+     margin: 15px 0;
+     background: $main-color;
+     width: 100%;
+     padding: 12px;
+     color: white;
+     font-weight: 700;
+     font-size: 18px;
+     letter-spacing: 2px;
+    }
+    .btn{
+     border-radius:0px !important;
+    }
+  }
+}
+
+// end billing
+// end checkout
