@@ -1,1 +1,224 @@
 @use "./variables" as *;
+
+// start contact-image
+
+.contact-image {
+  h3 {
+    @media (max-width: 767px) {
+      font-size: 37px;
+    }
+  }
+}
+
+// end contact-image
+// start shop details
+
+.shop-details {
+  .left-side {
+    @media (max-width: 767px) {
+      margin-top: 20px;
+    }
+    h3 {
+      font-weight: 700;
+      color: $third-color;
+      margin-bottom: 20px;
+    }
+    .star {
+      margin-bottom: 20px;
+      svg {
+        margin-right: -2px;
+        color: #edbb0e;
+        font-size: 15px;
+      }
+      span {
+        color: red;
+      }
+    }
+    h4 {
+      font-size: 30px;
+      color: #dd2222;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 16px;
+      color: #6f6f6f;
+      font-weight: 400;
+      line-height: 30px;
+      margin-bottom: 40px;
+    }
+    .calc {
+      background-color: #f5f5f5;
+      width: 130px;
+      height: 50px;
+      p {
+        margin-right: 37px;
+        margin-top: 10px;
+      }
+    }
+    .link {
+      background-color: $main-color;
+      padding: 13px 25px;
+      margin-left: 15px;
+      color: $four-color;
+      font-weight: bold;
+      @media (max-width:992px) {
+        padding: 13px 12px;
+      }
+    }
+    .icon {
+      color: $third-color;
+      background-color: #f5f5f5;
+      padding: 13px 20px;
+      margin-left: 15px;
+    }
+    ul {
+      margin-top: 30px;
+      li {
+        font-size: 16px;
+        color: $third-color;
+        margin-bottom: 20px;
+        @media (max-width: 767px) {
+          margin-bottom: 15px;
+        }
+
+        h5 {
+          font-size: 17px;
+          font-weight: 700;
+          width: 200px;
+          @media (max-width: 767px) {
+            width: 1500;
+          }
+        }
+        p {
+          color: $third-color;
+        }
+        span {
+          color: #dd2222;
+        }
+      }
+    }
+  }
+}
+
+// end shop details
+// start description
+
+.Description {
+  margin-top: 60px;
+  .link {
+    //   position: relative;
+    //   &::after,
+    //   &::before{
+    // content: "";
+    //     position: absolute;
+    //     top: 12px;
+    //     height: 3px;
+    //     width: 450px;
+    //     background: #ebebeb;
+    //     @media  (min-width: 992px) and (max-width: 1373px){
+    //       width: 300px;
+    //     }
+    //     @media (min-width: 768px) and (max-width: 991px){
+    //       width: 150px;
+    //     }
+    //   }
+    //   &::before{
+    //     left: 0;
+    //   }
+    //   &::after{
+    //     right: 0;
+    //   }
+    .link1 {
+      color: $third-color;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .link2 {
+      color: #495057;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+  h5 {
+    color: $third-color;
+    font-weight: 700;
+  }
+  p {
+    font-size: 16px;
+    color: #6f6f6f;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
+// end description
+// start product
+
+.product {
+  margin-top: 60px;
+  h2 {
+    font-weight: 700;
+    color: $third-color;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 101px;
+      height: 5px;
+      background-color: #7fad39;
+      left: 50%;
+      top: 43px;
+      transform: translate(-50px);
+    }
+  }
+  .row {
+    margin-top: 50px;
+    .box {
+      ul {
+        opacity: 0;
+        transition: 0.3s;
+        li {
+          a {
+            padding: 10px 20px;
+            border-radius: 50%;
+            background-color: $four-color;
+            color: $third-color;
+            @media (min-width:767px ) and (max-width:1197px){
+              padding: 7px 12px;
+            }
+            &:hover {
+              color: $four-color;
+              background-color: $main-color;
+            }
+            svg {
+              transform: rotate(0);
+              -webkit-transition: all, 0.3s;
+              -moz-transition: all, 0.3s;
+              -ms-transition: all, 0.3s;
+              -o-transition: all, 0.3s;
+              transition: all, 0.3s;
+              &:hover {
+                transform: rotate(360deg);
+              }
+            }
+          }
+        }
+      }
+    }
+    .box:hover ul {
+      opacity: 1;
+      transform: translateY(-50px);
+      @media (min-width:767px ) and (max-width:1197px){
+        transform: translateY(-40px);
+      }
+    }
+    .titlle {
+      h6 {
+        color: $third-color;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+// end product
