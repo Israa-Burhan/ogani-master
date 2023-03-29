@@ -1,5 +1,7 @@
 @use "./component/global-rules";
 
+@use "./component/variables";
+
 @use "./component/blog-details";
 
 @use "./component/blog";
@@ -10,17 +12,10 @@
 
 @use "./component/index";
 
+@use "./component//header";
+
 @use "./component/shop-details";
 
 @use "./component/shop-grid";
 
 @use "./component/shoping-cart";
-
-@use "./component/variables";
-
-
-
-
-
-
-

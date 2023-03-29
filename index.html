@@ -9,14 +9,707 @@
     <link rel="stylesheet" href="/assets/css/all.min.css" />
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.css" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
-    
-    
-    
+    <!-- start header -->
+    <!-- start top header -->
+
+    <div class="top-header py-2 d-none d-lg-block">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="d-flex align-items-center">
+              <p class="me-4 mb-0">
+                <i class="fa-solid fa-envelope"></i>
+                <span>hello@colorlib.com</span>
+              </p>
+              <p class="mb-0">Free Shipping for all Order of $99</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex align-items-center justify-content-end">
+              <div class="links">
+                <a><i class="fa-brands fa-facebook-f"></i></a>
+                <a><i class="fa-brands fa-twitter"></i></a>
+                <a><i class="fa-brands fa-linkedin-in"></i></a>
+                <a><i class="fa-brands fa-pinterest-p"></i></a>
+              </div>
+              <div class="languge ms-4 px-2">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn dropdown-toggle p-0 border-0"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="./assets/img/language.png" alt="" />
+                    English
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark bg-dark">
+                    <li>
+                      <a class="dropdown-item" href="#">Spanis</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">English</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="ms-4">
+                <i class="fa-solid fa-user"></i>
+                <span>Login</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--end top-header  -->
+    <!-- start middle-header -->
+
+    <div class="header my-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6 col-lg-3">
+            <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" alt="" /></a>
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+            <ul class="p-0 d-flex justify-content-center me-auto ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SHOP</a>
+              </li>
+              <li class="nav-item position-relative page-main">
+                <a class="nav-link" href="#"> PAGES</a>
+                <ul class="page-sub position-absolute">
+                  <li><a href="shop-details.html">Shop Details</a></li>
+                  <li><a href="shoping-cart.html">Shoping Cart</a></li>
+                  <li><a href="checkout.html">Check Out</a></li>
+                  <li><a href="blog-details.html">Blog Details</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="d-none d-lg-block">
+              <ul class="p-0 d-flex justify-content-center link mb-2 mb-lg-0">
+                <li>
+                  <a class="a1" href=""><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li>
+                  <a href="" class="a2"> <i class="fa fa-shopping-bag"></i></a>
+                </li>
+                <li>
+                  <span> item: <span class="span2"> $150.00</span></span>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-toggle d-flex justify-content-end d-lg-none d-block">
+              <a
+                href="a"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasResponsive">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <img src="./images/logo.png" alt="" />
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" alt="" /></a>
+              <ul class="p-0 d-flex link mb-4 mt-4">
+                <li>
+                  <a class="a1" href=""><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li>
+                  <a href="" class="a2"> <i class="fa fa-shopping-bag"></i></a>
+                </li>
+                <li>
+                  <span> item: <span class="span2"> $150.00</span></span>
+                </li>
+              </ul>
+              <div class="login mb-4 d-flex align-items-center">
+                <div class="languge px-2">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle p-0 border-0"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <img src="./assets/img/language.png" alt="" />
+                      English
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark bg-dark">
+                      <li>
+                        <a class="dropdown-item" href="#">Spanis</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">English</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ms-4">
+                  <i class="fa-solid fa-user"></i>
+                  <span>Login</span>
+                </div>
+              </div>
+
+              <div class="list-group mb-3 text-start">
+                <a
+                  href="#drop"
+                  class="list-group-item list-group-item-action active bg-black"
+                  aria-current="true"
+                  data-bs-toggle="collapse">
+                  Menu
+                </a>
+                <div class="collapse show" id="drop">
+                  <a href="index.html" class="list-group-item list-group-item-action bg-black">Home</a>
+                  <a href="#" class="list-group-item list-group-item-action bg-black">SHOP</a>
+                  <a href="blog-details.html" class="list-group-item list-group-item-action bg-black">PAGES</a>
+                  <a href="blog.html" class="list-group-item list-group-item-action bg-black">BLOG</a>
+                  <a href="contact.html" class="list-group-item list-group-item-action bg-black">CONTACT</a>
+                </div>
+              </div>
+              <div class="links d-flex justify-content-around">
+                <a><i class="fa-brands fa-facebook-f"></i></a>
+                <a><i class="fa-brands fa-twitter"></i></a>
+                <a><i class="fa-brands fa-linkedin-in"></i></a>
+                <a><i class="fa-brands fa-pinterest-p"></i></a>
+              </div>
+              <div class="mt-3">
+                <p class="me-4 mb-0">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>hello@colorlib.com</span>
+                </p>
+                <p class="mb-0">Free Shipping for all Order of $99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end middle-header -->
+    <!-- start bottom-header -->
+
+    <div class="bottom-header bootom">
+      <div class="container">
+        <div class="box d-flex flex-wrap mt-2">
+          <div class="col-lg-3 col-12 px-lg-3 px-0">
+            <div class="list-group position-relative">
+              <a
+                href="#kk"
+                class="list-group-item list-group-item-action active d-flex justify-content-around align-items-center"
+                aria-current="true"
+                data-bs-toggle="collapse">
+                <i class="fa-solid fa-bars"></i> All departments
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <div class="collapse position-absolute w-100 border pt-2" id="kk">
+                <a href="#" class="list-group-item list-group-item-action border-0">Fresh Meat</a>
+                <a href="#" class="list-group-item list-group-item-action border-0">Vegetables</a>
+                <a href="#" class="list-group-item list-group-item-action border-0">Fruit & Nut Gifts</a>
+                <a href="#" class="list-group-item list-group-item-action border-0">Fresh Berries</a>
+                <a href="#" class="list-group-item list-group-item-action border-0">Ocean Foods</a>
+                <a href="#" class="list-group-item list-group-item-action border-0">Butter & Eggs</a>
+                <a href="#" class="list-group-item list-group-item-action border-0">Fastfood</a>
+                <a href="#" class="list-group-item list-group-item-action border-0">Fresh Onion</a>
+                <a href="#" class="list-group-item list-group-item-action border-0">Papayaya & Crisps</a>
+                <a href="#" class="list-group-item list-group-item-action border-0">Oatmeal</a>
+                <a href="#" class="list-group-item list-group-item-action border-0">Fresh Bananas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 mt-2 mt-lg-0">
+            <div class="search d-flex align-items-center">
+              <div class="catogray">
+                All Categories
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <input class="flex-grow-1" type="search" placeholder="What do you need?" />
+              <button class="btn px-4">search</button>
+            </div>
+          </div>
+          <div class="col-lg-3 d-lg-block d-none px-3">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <p>+65 11.188.888</p>
+                <span>support 24/7 time</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end bottom-header -->
+    <!--end  header -->
+    <!-- start section banner -->
+
+    <div class="banner mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-9">
+            <div class="img-banner w-100">
+              <p class="p">FRUIT FRESH</p>
+              <h1>Vegetable <br />100% Organic</h1>
+              <p>Free Pickup and Delivery Available</p>
+              <button class="btn">SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end section banner -->
+    <!-- start section categories -->
+
+    <div class="Categories mb-5 position-relative">
+      <div class="container">
+        <div class="owl-carousel owl-theme text-center" id="one">
+          <div class="item position-relative">
+            <div class="titlle">
+              <img src="./assets/img/categories/cat-1.jpg" class="w-100" alt="" />
+              <div class="text btn position-absolute">
+                <a href=""> FRESH FRUIT</a>
+              </div>
+            </div>
+          </div>
+          <div class="item position-relative">
+            <div class="titlle">
+              <img src="./assets/img/categories/cat-2.jpg" class="w-100" alt="" />
+              <div class="text btn position-absolute">
+                <a href=""> FRESH FRUIT</a>
+              </div>
+            </div>
+          </div>
+          <div class="item position-relative">
+            <div class="titlle">
+              <img src="./assets/img/categories/cat-3.jpg" class="w-100" alt="" />
+              <div class="text btn position-absolute">
+                <a href=""> FRESH FRUIT</a>
+              </div>
+            </div>
+          </div>
+          <div class="item position-relative">
+            <div class="titlle">
+              <img src="./assets/img/categories/cat-4.jpg" class="w-100" alt="" />
+              <div class="text btn position-absolute">
+                <a href=""> FRESH FRUIT</a>
+              </div>
+            </div>
+          </div>
+          <div class="item position-relative">
+            <div class="titlle">
+              <img src="./assets/img/categories/cat-5.jpg" class="w-100" alt="" />
+              <div class="text btn position-absolute">
+                <a href=""> FRESH FRUIT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end section categories -->
+    <!--start Featured Product -->
+
+    <div class="Featured-Product mt-5 mb-5">
+      <div class="container">
+        <h2 class="text-center position-relative mb-5">Featured Product</h2>
+        <ul class="p-0 d-flex justify-content-center align-items-center">
+          <li class="mx-3 position-relative active">
+            <a aria-current="page" href="#">All</a>
+          </li>
+          <li class="mx-3 position-relative">
+            <a href="#"> Oranges</a>
+          </li>
+          <li class="mx-3 position-relative">
+            <a href="#"> Fresh Meat </a>
+          </li>
+          <li class="mx-3 position-relative">
+            <a href="">Vegetables</a>
+          </li>
+          <li class="mx-3 position-relative">
+            <a href=""> Fastfood </a>
+          </li>
+        </ul>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="box">
+              <img src="./assets/img/product/product-1.jpg" class="w-100" alt="" />
+              <ul class="p-0 d-flex justify-content-center">
+                <li class="me-xl-3 me-sm-2">
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                </li>
+                <li class="me-xl-3 me-sm-2">
+                  <a href="#"><i class="fa fa-retweet"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-3 titlle text-center">
+              <p class="m-0">Crab Pool Security</p>
+              <h6>$30.00</h6>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="box">
+              <img src="./assets/img/product/product-2.jpg" class="w-100" alt="" />
+              <ul class="p-0 d-flex justify-content-center">
+                <li class="me-xl-3 me-sm-2">
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                </li>
+                <li class="me-xl-3 me-sm-2">
+                  <a href="#"><i class="fa fa-retweet"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-3 titlle text-center">
+              <p class="m-0">Crab Pool Security</p>
+              <h6>$30.00</h6>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="box">
+              <img src="./assets/img/product/product-3.jpg" class="w-100" alt="" />
+              <ul class="p-0 d-flex justify-content-center">
+                <li class="me-xl-3 me-sm-2">
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                </li>
+                <li class="me-xl-3 me-sm-2">
+                  <a href="#"><i class="fa fa-retweet"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-3 titlle text-center">
+              <p class="m-0">Crab Pool Security</p>
+              <h6>$30.00</h6>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="box">
+              <img src="./assets/img/product/product-7.jpg" class="w-100" alt="" />
+              <ul class="p-0 d-flex justify-content-center">
+                <li class="me-xl-3 me-sm-2">
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                </li>
+                <li class="me-xl-3 me-sm-2">
+                  <a href="#"><i class="fa fa-retweet"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-3 titlle text-center">
+              <p class="m-0">Crab Pool Security</p>
+              <h6>$30.00</h6>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="box">
+              <img src="./assets/img/featured/feature-5.jpg" class="w-100" alt="" />
+              <ul class="p-0 d-flex justify-content-center">
+                <li class="me-xl-3 me-sm-2">
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                </li>
+                <li class="me-xl-3 me-sm-2">
+                  <a href="#"><i class="fa fa-retweet"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-3 titlle text-center">
+              <p class="m-0">Crab Pool Security</p>
+              <h6>$30.00</h6>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="box">
+              <img src="./assets/img/featured/feature-6.jpg" class="w-100" alt="" />
+              <ul class="p-0 d-flex justify-content-center">
+                <li class="me-xl-3 me-sm-2">
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                </li>
+                <li class="me-xl-3 me-sm-2">
+                  <a href="#"><i class="fa fa-retweet"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-3 titlle text-center">
+              <p class="m-0">Crab Pool Security</p>
+              <h6>$30.00</h6>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="box">
+              <img src="./assets/img/featured/feature-7.jpg" class="w-100" alt="" />
+              <ul class="p-0 d-flex justify-content-center">
+                <li class="me-xl-3 me-sm-2">
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                </li>
+                <li class="me-xl-3 me-sm-2">
+                  <a href="#"><i class="fa fa-retweet"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-3 titlle text-center">
+              <p class="m-0">Crab Pool Security</p>
+              <h6>$30.00</h6>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <div class="box">
+              <img src="./assets/img/featured/feature-8.jpg" class="w-100" alt="" />
+              <ul class="p-0 d-flex justify-content-center">
+                <li class="me-xl-3 me-sm-2">
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                </li>
+                <li class="me-xl-3 me-sm-2">
+                  <a href="#"><i class="fa fa-retweet"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-3 titlle text-center">
+              <p class="m-0">Crab Pool Security</p>
+              <h6>$30.00</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--end Featured Product -->
+    <!-- start section photo -->
+
+    <div class="section mt-5 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <img src="./assets/img/banner/banner-1.jpg" alt="" />
+          </div>
+          <div class="col-lg-6 col-12">
+            <img src="./assets/img/banner/banner-2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end section photo -->
+    <!-- start blog items -->
+
+    <div class="bolg-items mt-4">
+      <div class="container">
+        <h2 class="text-center mb-5 position-relative">From The Blog</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 h-100">
+            <div class="box">
+              <div><img src="./assets/img/blog/blog-1.jpg" class="w-100" alt="" /></div>
+              <div class="box-tiitle mt-3">
+                <div class="date d-flex">
+                  <div class="me-3 mb-4">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>May 4,2019</span>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-comment"></i>
+                    <span>5</span>
+                  </div>
+                </div>
+                <h5>6 ways to prepare breakfast for 30</h5>
+                <p class="mb-4">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
+                <a href="">READ MORE <i class="fa-solid fa-arrow-right ms-2"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 h-100">
+            <div class="box">
+              <div><img src="./assets/img/blog/blog-2.jpg" class="w-100" alt="" /></div>
+              <div class="box-tiitle mt-3">
+                <div class="date d-flex">
+                  <div class="me-3 mb-4">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>May 4,2019</span>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-comment"></i>
+                    <span>5</span>
+                  </div>
+                </div>
+                <h5>Visit the clean farm in the US</h5>
+                <p class="mb-4">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
+                <a href="">READ MORE <i class="fa-solid fa-arrow-right ms-2"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 h-100">
+            <div class="box">
+              <div><img src="./assets/img/blog/blog-3.jpg" class="w-100" alt="" /></div>
+              <div class="box-tiitle mt-3">
+                <div class="date d-flex">
+                  <div class="me-3 mb-4">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>May 4,2019</span>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-comment"></i>
+                    <span>5</span>
+                  </div>
+                </div>
+                <h5>Cooking tips make cooking simple</h5>
+                <p class="mb-4">Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
+                <a href="">READ MORE <i class="fa-solid fa-arrow-right ms-2"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end blog items -->
+    <!-- start footer -->
+
+    <div class="footer pt-4 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-3 col-md-6 col-12">
+            <div class="box">
+              <div class="logo"><img src="./assets/img/logo.png" alt="" /></div>
+              <ul class="ps-0">
+                <li>Address: 60-49 Road 11378 New York</li>
+                <li>Phone: +65 11.188.888</li>
+                <li>Email: hello@colorlib.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-md-6 col-12 offset-lg-1">
+            <h5>Useful Links</h5>
+            <div class="list d-flex">
+              <ul class="ps-0 w-50">
+                <li>About Us</li>
+                <li>About Our Shop</li>
+                <li>Secure Shopping</li>
+                <li>Delivery infomation</li>
+                <li>Privacy Policy</li>
+                <li>Our Sitemap</li>
+              </ul>
+              <ul class="ps-0 w-50">
+                <li>Who We Are</li>
+                <li>Our Services</li>
+                <li>Projects</li>
+                <li>Contact</li>
+                <li>Innovation</li>
+                <li>Testimonials</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-md-12">
+            <div class="box">
+              <h5>Join Our Newsletter Now</h5>
+              <p>Get E-mail updates about our latest shop and special offers.</p>
+              <div class="search d-flex align-items-center w-100">
+                <input class="flex-grow-1" type="search" placeholder="Enter your mail" />
+                <span>SUBSCRIBE </span>
+              </div>
+              <div class="icon mt-4 d-flex align-items-center">
+                <i class="fa-brands fa-facebook-f me-4"></i>
+                <i class="fa-brands fa-instagram me-4"></i>
+                <i class="fa-brands fa-twitter me-4"></i>
+                <i class="fa-brands fa-pinterest me-4"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <p class="Copyright">
+              Copyright ©2022 All rights reserved | This template is made with
+              <i class="fa-solid fa-heart"></i>
+              by <a href=""> I B A</a>
+            </p>
+          </div>
+          <div class="col-lg-6 col-12 text-lg-end">
+            <img src="./assets/img/payment-item.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="/assets/js/all.min.js"></script>
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var one = $("#one");
+        one.owlCarousel({
+          loop: true,
+          autoplay: true,
+          dots: false,
+          margin: 15,
+          nav: true,
+          slideBy: 1,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 4,
+            },
+          },
+        });
+      });
+    </script>
   </body>
 </html>

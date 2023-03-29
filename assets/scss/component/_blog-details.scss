@@ -10,8 +10,12 @@
   h3 {
     font-weight: 700;
     font-size: 50px;
+    @media (max-width: 1400px) {
+      font-size: 30px;
+    }
     @media (max-width: 767px) {
-      font-size: 24px;
+      text-align: center;
+      font-size: 16px;
     }
   }
   a {
@@ -136,11 +140,11 @@
 // end blog-details
 // start post
 
-.post{
-  h2{
+.post {
+  h2 {
     font-weight: 700;
     color: $third-color;
-    &::after{
+    &::after {
       position: absolute;
       content: "";
       width: 101px;

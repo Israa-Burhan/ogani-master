@@ -1,0 +1,220 @@
+@use "./variables" as *;
+// header
+//start top-header
+
+.top-header {
+  background-color: #f8f9fa;
+  .links a {
+    padding: 0 10px;
+  }
+  .languge {
+    border-right: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+    .dropdown-toggle {
+      &::after {
+        vertical-align: 0.2em !important;
+      }
+    }
+  }
+  .languge button {
+    margin: 0 10px;
+  }
+}
+
+//end top-header
+// start header
+
+.header {
+  .nav-item {
+    padding: 0 25px;
+    .nav-link {
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: $third-color;
+      &:hover {
+        color: $main-color;
+      }
+    }
+    .active {
+      color: $main-color;
+    }
+  }
+  .link {
+    li {
+      padding: 0 10px;
+      .a1 {
+        position: relative;
+        &::after {
+          content: "1";
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: $main-color;
+          color: $four-color;
+          font-size: 10px;
+          padding: 1px 4px;
+          top: -2px;
+        }
+      }
+      .a2 {
+        position: relative;
+        &::after {
+          content: "3";
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: $main-color;
+          color: $four-color;
+          font-size: 10px;
+          padding: 1px 4px;
+          top: -2px;
+        }
+      }
+    }
+    svg {
+      font-size: 18px;
+      color: $third-color;
+    }
+    .span2 {
+      color: $third-color;
+      font-weight: 700;
+    }
+  }
+  .page-sub {
+    display: none;
+    width: 200px;
+    left: 0;
+    box-shadow: 0 0 3px 1px rgb(0 0 0 / 20%);
+    background: #ffffff;
+    a {
+      line-height: 20px;
+      padding: 8px 20px;
+      font-weight: 400;
+      font-size: 14px;
+      color: #777;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+  }
+  .page-main:hover .page-sub {
+    display: block;
+  }
+  .mobile-toggle {
+    a {
+      svg {
+        font-size: 30px;
+        color: black;
+      }
+    }
+  }
+  .offcanvas {
+    width: calc(100% - 65%);
+    @media (max-width: 767px) {
+      width: 78%;
+    }
+    .login {
+      .languge {
+        border-right: 2px solid #ddd;
+
+        .dropdown-toggle {
+          &::after {
+            vertical-align: 0.2em !important;
+          }
+        }
+      }
+    }
+    .list-group,
+    .collapse {
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+// end middle-header
+// start bottom-header
+
+.bottom-header {
+  .list-group {
+    z-index: 9;
+    .active {
+      font-size: 17px;
+      font-weight: 700;
+      border: 0;
+      border-radius: 0;
+      padding: 13px 0;
+      background-color: $main-color;
+      color: $four-color;
+    }
+    .collapse {
+      a {
+        padding-left: 20px;
+      }
+    }
+  }
+
+  .search {
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+    border: 1px solid #ebebeb;
+    .catogray {
+      padding-left: 13px;
+      color: $third-color;
+      font-weight: 700;
+      svg {
+        margin-left: 5px;
+      }
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+    input[type="search"] {
+      margin: 13px;
+      border: none;
+      border-left: 2px solid #ebebeb;
+      margin-left: 35px;
+      @media (max-width: 767px) {
+        margin: 1px;
+        margin-left: 1px;
+        font-size: 15px;
+      }
+    }
+    button {
+      background: #7fad39;
+      font-weight: 700;
+      font-size: 19px;
+      color: #ffffff;
+      padding: 10px 0;
+      border-radius: 0;
+      &:hover {
+        background: #7fad39 !important;
+      }
+      @media (max-width: 767px) {
+        font-size: 15px;
+      }
+    }
+  }
+  .icon {
+    svg {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 50%;
+      color: $main-color;
+      margin-right: 12px;
+      font-size: 16px;
+    }
+    p {
+      margin-bottom: 0 !important;
+      color: $third-color;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}
+// end bottom-header
